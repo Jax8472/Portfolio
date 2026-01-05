@@ -40,6 +40,13 @@ header .container {
     align-items: center;
 }
 
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 .logo {
     font-size: 18px;
     font-weight: 500;
