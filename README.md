@@ -1,10 +1,10 @@
 # Portfolio Website Template
 
-This is a clean, minimal portfolio template inspired by Heinrich Zaunschirm's design aesthetic.
+This is a clean, minimal portfolio template.
 
 ## What You Got
 
-- **portfolio-template.html** - The main page structure
+- **index.html** - The main page structure
 - **styles.css** - All the styling (colors, fonts, layout)
 
 ## How to Use This
