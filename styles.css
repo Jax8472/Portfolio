@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     color: #333;
     line-height: 1.6;
     background: #fff;
@@ -41,11 +41,10 @@ header .container {
 }
 
 .logo {
-    font-family: "Playfair Display", serif;
-    font-size: 36px;
-    font-optical-sizing: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
     font-weight: 500;
-    letter-spacing: normal;
+    letter-spacing: 0.5px;
 }
 
 nav {
@@ -64,6 +63,7 @@ nav a {
 }
 
 .intro h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -112,6 +112,7 @@ nav a {
 }
 
 .project-item h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -138,27 +139,127 @@ footer p {
     letter-spacing: 0.5px;
 }
 
-/* Page Content (About, More pages) */
-.page-content {
+/* More Page Styles */
+.more-page {
     padding: 60px 0 80px;
 }
 
-.page-content h1 {
+.more-intro {
+    margin-bottom: 80px;
+}
+
+.more-intro h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
     letter-spacing: 0.5px;
 }
 
-.about-section {
-    margin-bottom: 50px;
+.more-intro p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
     max-width: 700px;
 }
 
-.about-section h2 {
-    font-size: 20px;
+.gallery-section {
+    margin-bottom: 100px;
+}
+
+.gallery-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
     font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+}
+
+.gallery-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.85;
+}
+
+/* About Page Styles */
+.about-page {
+    padding: 60px 0 80px;
+}
+
+.about-hero {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.about-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-intro {
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.about-intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 0.3px;
+}
+
+.about-intro p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
     margin-bottom: 20px;
+}
+
+.about-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 60px 0;
+}
+
+.about-photos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-section {
+    max-width: 700px;
+    margin: 80px auto 0;
+}
+
+.about-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
     letter-spacing: 0.3px;
 }
 
@@ -166,28 +267,134 @@ footer p {
     font-size: 16px;
     line-height: 1.8;
     color: #666;
-    margin-bottom: 15px;
-}
-
-.about-section ul {
-    margin-left: 20px;
-    margin-top: 15px;
-}
-
-.about-section li {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 10px;
 }
 
 .about-section a {
     color: #333;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .about-section a:hover {
     opacity: 0.6;
+}
+
+/* Timeline Items (Experience & Education) */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.6;
+}
+
+.timeline-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.timeline-content strong {
+    color: #333;
+    font-weight: 500;
+}
+
+.timeline-description {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Skills Section */
+.skills-section .skill-item {
+    margin-bottom: 35px;
+}
+
+.skills-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+.skills-section p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Software, Interests, Learning Sections */
+.software-section p,
+.interests-section p,
+.learning-section p {
+    font-size: 15px;
+    line-height: 2;
+    color: #666;
+}
+
+/* Awards Section */
+.awards-section .award-item {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.awards-section .award-item strong {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-section h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.contact-section a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    opacity: 0.6;
+}
+
+/* Page Content (More pages) */
+.page-content {
+    padding: 60px 0 80px;
+}
+
+.page-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+}
+
+.page-content .about-section {
+    margin-bottom: 50px;
+}
+
+.page-content ul {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.page-content li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 10px;
 }
 
 /* Project Detail Pages */
@@ -201,6 +408,7 @@ footer p {
 }
 
 .project-header h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -238,6 +446,7 @@ footer p {
 }
 
 .project-content h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 500;
     margin-top: 50px;
@@ -318,6 +527,7 @@ footer p {
     }
 
     .project-header h1 {
+        font-family: 'Playfair Display', serif;
         font-size: 28px;
     }
 
@@ -333,5 +543,23 @@ footer p {
     .project-nav {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .about-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .timeline-date {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 }
