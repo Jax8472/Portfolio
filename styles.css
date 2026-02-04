@@ -424,6 +424,7 @@ footer p {
 .project-meta {
     display: flex;
     justify-content: center;
+    margin: 0 auto;  
     max-width: 600px;
     gap: 30px;
     font-size: 14px;
